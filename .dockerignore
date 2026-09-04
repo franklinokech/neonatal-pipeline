@@ -1,0 +1,8 @@
+.git
+.gitignore
+.env
+README.md
+*.Rproj
+.Rproj.user
+renv/library/
+renv/staging/

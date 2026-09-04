@@ -1,0 +1,10 @@
+services:
+  pipeline:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./cache:/app/cache
+      - ./.env:/app/.env
+    restart: "no"

@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.env
+logs/
+cache/
+renv/library/
+renv/staging/
+renv/.renv/
+*.Rproj
+.Rproj.user
+.DS_Store
