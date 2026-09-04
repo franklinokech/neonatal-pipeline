@@ -1,0 +1,17 @@
+services:
+  pipeline:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./cache:/app/cache
+      - ./scripts:/app/scripts   # hot reload for development
+      - ./.env:/app/.env
+      # Optional: mount renv folder to persist package installations
+      # - ./renv:/app/renv
+      # - ./renv.lock:/app/renv.lock
+      # - ./.Rprofile:/app/.Rprofile
+    restart: "no"
+    # Optional: keep container alive for interactive debugging
+    # command: ["tail", "-f", "/dev/null"]
